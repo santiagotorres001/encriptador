@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Estilos generales */
 * {
     padding: 0;
@@ -199,3 +200,205 @@ body {
         
     }
 }
+=======
+/* Estilos generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0A3871;
+    --secondary-color: #D8DFE8;
+    --background-color: #F3F5FC;
+    --fuente-inter: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--fuente-inter);
+    background-color: var(--background-color);
+    height: 95vh;
+    padding: 2% 2%;
+}
+
+.area_principal {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.entrada_texto {
+    padding: 70px;
+    justify-content: center;
+    width: 100%;
+}
+
+.salida_texto {
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.botones>* {
+    margin: 2%;
+    gap: 10px;
+    padding: 20px;
+    cursor: pointer;
+    width: 328px;
+    border-radius: 24px;
+}
+
+.btn_e {
+    color: white;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn_d {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn_copiar {
+    margin: 20% 1% 1% 1%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.entrada_txt {
+    width: 100%;
+    height: 90%;
+    resize: none;
+    border: none;
+    background-color: var(--background-color);
+    font-size: 25px;
+    text-align: justify;
+}
+
+.salida_txt {
+    display: flex;
+    flex-direction: column;
+    width: 90%; /* Ajusta el ancho del texto de salida */
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 32px;
+    padding: 10px 10px 10px 15px;
+    text-align: center;
+    background-color: white;
+    gap: 10px; /* Reduce el espacio entre los elementos */
+    resize: none;
+    cursor: default;
+}
+
+.entrada_txt:focus,
+.salida_txt:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+/* Media Query para pantallas de 768px o menos */
+@media (max-width: 768px) {
+    .area_principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entrada_texto {
+        width: 100%;
+        padding: 50px;
+        height: 95%;
+    }
+
+    .salida_texto {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .botones {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .botones>* {
+        width: 45%;
+        margin: 5px 1px 1px 1px;
+    }
+
+    .salida_txt img {
+        display: none; /* Ocultar la imagen */
+        gap: 5px;
+    }
+
+    .salida_txt {
+        width: 100%; /* Ajusta el ancho del texto de salida para pantallas pequeñas */
+        gap: 10px; /* Reduce aún más el espacio entre los elementos */
+        padding: 10px 0px;
+    }
+    .btn_copiar{
+        flex: auto;
+        justify-content: center;
+        padding: 10px;
+        
+    }
+}
+
+
+@media (max-width: 375px) {
+    .area_principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entrada_texto {
+        width: 100%;
+        padding: 50px;
+        height: 75%;
+    }
+
+    .salida_texto {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .botones {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botones>* {
+        width: 100%;
+        margin: 5px 1px 1px 1px;
+    }
+
+    .salida_txt img {
+        display: none; /* Ocultar la imagen */
+        gap: 5px;
+    }
+
+    .salida_txt {
+        width: 100%; /* Ajusta el ancho del texto de salida para pantallas pequeñas */
+        gap: 10px; /* Reduce aún más el espacio entre los elementos */
+        padding: 10px 0px;
+    }
+    .btn_copiar{
+        flex: auto;
+        justify-content: center;
+        padding: 10px;
+        width: 70%;
+        
+    }
+}
+>>>>>>> f16bd4eda114cd3ace03f9c7ca95e5a571ff8f7e

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,4 +60,67 @@
     <script src="app.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+
+</head>
+
+<body>
+
+    <main class="area_principal">
+        <section class="entrada_texto">
+
+            <textarea id="inputTexto" class="entrada_txt" rows="4" placeholder="Ingrese el texto aqui."></textarea>
+            <div class="botones">
+                <button class="btn_e" onclick="encriptarTexto()">Encriptar</button>
+                <button class="btn_d" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+
+        </section>
+        <section class="salida_texto">
+
+           
+            <div class="salida_txt">
+
+                <label for="outputTexto"></label>
+                <textarea id="outputTexto" class="salida_txt" rows="4" readonly></textarea>
+
+                <div id="ocultar">
+
+                
+                
+                <img src="/assets/Muñeco.png">
+
+                <h1>
+                    Ningun mensaje fue encontrado.
+                </h1>
+
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="botones">
+                    <button class="btn_copiar" id="copiar" onclick="copiarTexto()" style="display: none;">Copiar</button>
+
+                </div>
+
+            </div>
+
+            
+
+        </section>
+
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+>>>>>>> f16bd4eda114cd3ace03f9c7ca95e5a571ff8f7e
 </html>

@@ -49,10 +49,9 @@ function desencriptarTexto() {
     }
     else{
         document.getElementById("outputTexto").value = resultado;
-        document.getElementById("copiar").style.display = "inline-block";
-        document.getElementById("ocultar").style.display = "none";
     }
-    
+    document.getElementById("copiar").style.display = "inline-block";
+    document.getElementById("ocultar").style.display = "none";
 }
 
 function copiarTexto() {

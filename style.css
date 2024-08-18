@@ -1,5 +1,3 @@
-
-
 * {
     padding: 0;
     margin: 0;
@@ -86,17 +84,23 @@ body {
 .salida_txt {
     display: flex;
     flex-direction: column;
-    width: 90%; 
+    width: 90%;
     height: 100%;
     border: 1px solid transparent;
     border-radius: 32px;
     padding: 10px 10px 10px 15px;
     text-align: center;
     background-color: white;
-    gap: 10px; 
+    gap: 10px;
     resize: none;
     cursor: default;
 }
+
+p, h1 {
+    text-align: center;
+}
+
+
 
 .entrada_txt:focus,
 .salida_txt:focus {
@@ -133,21 +137,23 @@ body {
         margin: 5px 1px 1px 1px;
     }
 
-    .salida_txt img {
-        display: none; 
-        gap: 5px;
-    }
+
 
     .salida_txt {
-        width: 100%; 
-        gap: 10px; 
+        width: 100%;
+        gap: 10px;
         padding: 10px 0px;
     }
-    .btn_copiar{
+
+    .btn_copiar {
         flex: auto;
         justify-content: center;
         padding: 10px;
-        
+
+    }
+
+    img{
+        display: none;
     }
 }
 
@@ -165,7 +171,8 @@ body {
     }
 
     .salida_texto {
-        width: 100%;
+        width: 80%;
+        height: 35%;
         padding: 5px;
     }
 
@@ -181,26 +188,24 @@ body {
         margin: 5px 1px 1px 1px;
     }
 
-    .salida_txt img {
-        display: none; 
-        gap: 5px;
-    }
 
     .salida_txt {
         width: 100%;
         gap: 10px;
-        padding: 10px 0px;
+        padding: 10px 0px 10px 10px;
         text-align: justify;
     }
-    .btn_copiar{
+
+    .btn_copiar {
         flex: auto;
         justify-content: center;
         padding: 10px;
         width: 70%;
-        
+
+    }
+
+    img{
+        display: none;
     }
 }
 
-p, h1{
-    text-align: center;
-}

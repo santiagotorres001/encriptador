@@ -15,7 +15,7 @@ function encriptar(texto) {
 }
 
 function desencriptar(texto) {
-    // Reemplazamos las secuencias encriptadas en el orden inverso
+  
     const desencriptado = texto
         .replace(/ufat/g, "u")
         .replace(/ober/g, "o")
@@ -58,7 +58,7 @@ function desencriptarTexto() {
 function copiarTexto() {
     const outputTexto = document.getElementById("outputTexto");
     outputTexto.select();
-    outputTexto.setSelectionRange(0, 99999); // Para dispositivos móviles
+    outputTexto.setSelectionRange(0, 99999); 
     document.execCommand("copy");
 
     alert("Texto copiado al portapapeles: " + outputTexto.value);
